@@ -14,5 +14,6 @@ python -mpip install --upgrade pip
 pip --version
 pip3 --version
 python -mpip install -r /opt/requirements-ci.txt
+python -mpip install cmake
 
 pip --version
