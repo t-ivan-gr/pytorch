@@ -7,6 +7,7 @@ python3 --version
 pip --version
 pip3 --version
 python -m pip --version
+python3 -m pip --version
 # Use uv to speed up lintrunner init
 python3 -m pip install uv==0.1.45
 
@@ -25,6 +26,8 @@ fi
 
 # This has already been cached in the docker image
 lintrunner init 2> /dev/null
+pip show cmakelint
+cmakelint --help
 
 # Do build steps necessary for linters
 if [[ "${CLANG}" == "1" ]]; then
