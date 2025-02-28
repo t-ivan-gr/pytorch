@@ -2,11 +2,10 @@
 set -ex
 
 # The generic Linux job chooses to use base env, not the one setup by the image
-which python
-which python3
-which pip
-which pip3
-
+python --version
+python3 --version
+pip --version
+pip3 --version
 # Use uv to speed up lintrunner init
 python3 -m pip install uv==0.1.45
 
