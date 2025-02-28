@@ -22,7 +22,7 @@ ARG ANACONDA_PYTHON_VERSION
 ENV PYTHON_VERSION=$ANACONDA_PYTHON_VERSION
 COPY requirements-ci.txt /opt/requirements-ci.txt
 COPY ./common/install_python.sh install_python.sh
-RUN bash ./install_python.sh && rm install_python.sh /opt/conda/requirements-ci.txt
+RUN bash ./install_python.sh && rm install_python.sh /opt/requirements-ci.txt
 
 # Install cuda and cudnn
 ARG CUDA_VERSION
