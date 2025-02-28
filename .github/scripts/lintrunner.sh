@@ -10,6 +10,7 @@ python -m pip --version
 python3 -m pip --version
 # Use uv to speed up lintrunner init
 python3 -m pip install uv==0.1.45
+export PATH="${HOME}/.local/bin:${PATH}"
 
 CACHE_DIRECTORY="/tmp/.lintbin"
 # Try to recover the cached binaries
