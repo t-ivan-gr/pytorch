@@ -26,7 +26,7 @@ if ! command -v lintrunner &> /dev/null; then
 fi
 
 # This has already been cached in the docker image
-lintrunner init 2> /dev/null
+lintrunner init
 pip show cmakelint
 cmakelint --help
 
