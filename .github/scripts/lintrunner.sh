@@ -6,6 +6,7 @@ python --version
 python3 --version
 pip --version
 pip3 --version
+python -m pip --version
 # Use uv to speed up lintrunner init
 python3 -m pip install uv==0.1.45
 
