@@ -23,9 +23,8 @@ RUN bash ./install_python.sh && rm install_python.sh /opt/requirements-ci.txt
 
 # Note that Docker build forbids copying file outside the build context
 COPY ./common/install_linter.sh install_linter.sh
-COPY ./common/common_utils.sh common_utils.sh
 RUN bash ./install_linter.sh
-RUN rm install_linter.sh common_utils.sh
+RUN rm install_linter.sh
 
 USER jenkins
 CMD ["bash"]
